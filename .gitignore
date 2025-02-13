@@ -1,0 +1,12 @@
+*.pdf
+*.log
+.DS_Store
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
+*.toc
+*.bbl
+*.blg
+_minted*/
