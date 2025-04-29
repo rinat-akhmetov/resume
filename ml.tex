@@ -1,0 +1,283 @@
+%-------------------------
+% Senior ML Engineer Resume – Rinat Akhmetov
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% ---------- PACKAGES & SETUP ----------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+%-------------------------
+% Senior Machine Learning Engineer Resume – Rinat Akhmetov
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% ---------- PACKAGES & SETUP ----------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ---------- SECTION FORMATTING ----------
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ---------- COMMANDS ----------
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubSubheading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textit{\small#1} & \textit{\small #2} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% ---------- RESUME ----------
+\begin{document}
+
+% ----- HEADER -----
+\begin{center}
+  \textbf{\Huge \scshape Rinat Akhmetov} \\ \vspace{1pt}
+  \small +1 (437) 256-9794 $|$ \href{mailto:kpfu.akhmetov.rinat@gmail.com}{\underline{kpfu.akhmetov.rinat@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/rinat-akhmetov/}{\underline{linkedin.com/in/rinat-akhmetov}} $|$
+  \href{https://github.com/rinat-akhmetov}{\underline{github.com/rinat-akhmetov}}
+\end{center}
+
+% ----- SUMMARY -----
+\section*{Senior Machine Learning Engineer}
+Senior ML Engineer (10+ yrs) who bridges research and production: designing, training, and scaling ML models (LLMs, CV, NLP) that drive measurable business impact. Expert in model development, evaluation, and lifecycle management with a strong MLOps foundation and experience mentoring teams.
+
+% ----- EXPERIENCE -----
+\section{Experience}
+\resumeSubHeadingListStart
+
+% === Provectus ===
+\resumeSubheading{Provectus}{Jan 2016 -- Present}{Senior Machine Learning Engineer / Tech Lead}{Toronto, Canada}
+
+% ---- GenAI & Retrieval ----
+\resumeSubSubheading{Lead – Generative AI \& Retrieval Systems}{2024 -- Present}
+\resumeItemListStart
+\resumeItem{Fine‑tuned \textbf{Llama‑3 70B} with LoRA on 200k compliance Q\&A pairs; boosted answer accuracy by \textbf{32\%}.}
+\resumeItem{Architected a multi‑stage \textbf{RAG} pipeline (vector + hybrid search) serving \textbf{300 QPS} at \textless500 ms P95 latency.}
+\resumeItem{Built automatic offline evaluation harness (BERTScore, Rouge‑L, human adjudication) cutting experiment cycle time by \textbf{40\%}.}
+\resumeItem{Devised hierarchical chunking and adaptive embedding strategy reducing token costs \textbf{55\%}.}
+\resumeItem{Open‑sourced internal RAG framework; adopted by 4 client teams and starred 600+ times on GitHub.}
+\resumeItemListEnd
+
+% ---- IDP ----
+\resumeSubSubheading{Senior ML Engineer – Intelligent Document Processing}{2021 -- 2024}
+\resumeItemListStart
+\resumeItem{Trained \textbf{DeBERTa‑v3} multi‑label classifier for FDA Form 483; F1 improved from 0.87→0.92 using class‑balanced focal loss.}
+\resumeItem{Implemented \textbf{Active Learning} loop with Monte‑Carlo dropout uncertainty; reduced manual labeling hours 60\%.}
+\resumeItem{Launched continuous training on AWS SageMaker Pipelines; model retrained weekly on \textgreater4 M docs with zero downtime.}
+\resumeItem{Designed Feature Store in Feast + DynamoDB; sped up model inference features lookup by 5×.}
+\resumeItemListEnd
+
+% ---- CV ----
+\resumeSubSubheading{ML Tech Lead – Computer Vision for Manufacturing}{2019 -- 2021}
+\resumeItemListStart
+\resumeItem{Developed defect‑detection pipeline using \textbf{YOLOv8 + Segment Anything}; achieved \textbf{mAP@0.5 = 0.96}.}
+\resumeItem{Optimized inference with TensorRT + INT8 quantization, delivering \textless100 ms end‑to‑end latency on Jetson Xavier NX.}
+\resumeItem{Introduced Bayesian drift detector; maintained mAP drop \textless2\% over 18 months of factory drift.}
+\resumeItemListEnd
+
+% ---- Mentoring & Leadership ----
+\resumeSubSubheading{Team Leadership \& Hiring}{2018 -- Present}
+\resumeItemListStart
+\resumeItem{Mentored 6 ML engineers and 3 interns; defined quarterly learning roadmaps and peer‑review process.}
+\resumeItem{Led interview loop design; conducted 40+ technical interviews for ML roles (research, infra, and data).}
+\resumeItemListEnd
+
+% === FOSS Labs ===
+\resumeSubheading{FOSS Labs}{Oct 2014 -- Jan 2016}{Machine Learning Engineer}{Kazan, Russia}
+\resumeItemListStart
+\resumeItem{Built hybrid recommendation engine (FM + content‑based) for sports media; CTR uplift \textbf{18\%}.}
+\resumeItem{Prototyped LSTM seq2seq model for automated news headline generation; improved editor throughput \textbf{25\%}.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ----- EDUCATION -----
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Kazan Federal University}{Sep 2016 -- May 2018}{M.Sc. – Data Analysis}{Kazan, Russia}
+\resumeSubHeadingListEnd
+
+% ----- PUBLICATIONS & TALKS -----
+\section{Selected Publications \& Talks}
+\resumeSubHeadingListStart
+\resumeProjectHeading{}{ }
+\resumeItemListStart
+\resumeItem{\href{https://provectus.com/blog/comparison-large-language-models-biomedical-domain/}{Comparing LLMs in the Biomedical Domain} – Blog, 2023}
+\resumeItem{\href{https://aws.amazon.com/blogs/apn/accelerating-time-to-compliance-in-healthcare-and-life-sciences-through-automated-fda-forms-processing-with-ai-on-aws/}{Automated FDA Forms Processing with AI on AWS} – AWS Partner Blog, 2024}
+\resumeItem{\href{https://www.youtube.com/watch?v=pe8GEUVM4t8}{“Better call YOLO”} – YouTube talk, 2022}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ----- SKILLS -----
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}: Python, SQL, TypeScript  \textbar{}  \textbf{DL Frameworks}: PyTorch, TensorFlow, HuggingFace, Keras  \\
+        \textbf{Model Families}: Transformers, LLM fine‑tuning, CNNs, RNNs, GNNs, Autoencoders, Seq2Seq, Siamese Nets  \\
+        \textbf{ML Techniques}: Retrieval‑Augmented Generation, Active Learning, Few‑/Zero‑shot, Transfer Learning, Anomaly Detection, Time‑series Forecasting  \\
+        \textbf{Evaluation}: BERTScore, BLEU, Rouge‑L, mAP, AUC, SHAP, Bias/Fairness metrics  \\
+        \textbf{MLOps}: SageMaker, Vertex AI, Kubeflow, MLflow, Feast, CI/CD (GitLab CI, Jenkins), Terraform, Docker, Kubernetes  \\
+        \textbf{Data/Storage}: PGVector, Pinecone, ElasticSearch, DynamoDB, S3, BigQuery  \\
+        \textbf{Serving}: FastAPI, TorchServe, Triton, AWS Lambda, Step Functions, Kinesis, Kafka  \\
+        \textbf{Ops}: Prometheus/Grafana, CloudWatch, Opensearch Dashboards, CDK  \\
+        \textbf{Leadership}: Tech roadmapping, hiring, stakeholder alignment, OKRs
+        }}
+\end{itemize}
+
+\end{document}
+
+
+% Page
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% Section formatting
+\titleformat{\section}{\scshape\large\raggedright}{ }{0em}{}[\color{black}\titlerule]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% --------------------------------------
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\Huge \scshape Rinat Akhmetov} \\ \vspace{2pt}
+  Toronto, ON • +1 (437) 256‑9794 • \href{mailto:kpfu.akhmetov.rinat@gmail.com}{kpfu.akhmetov.rinat@gmail.com} \\
+  \href{https://www.linkedin.com/in/rinat-akhmetov/}{linkedin.com/in/rinat-akhmetov} • \href{https://github.com/rinat-akhmetov}{github.com/rinat-akhmetov}
+\end{center}
+
+% ---------- Summary ----------
+\section*{Senior Machine Learning Engineer / AI Solutions Architect}
+Seasoned ML engineer (11+ yrs) who ships production‑grade AI at scale. Expert in GenAI, RAG, NLP, CV, and real‑time inference on AWS. Proven record leading cross‑functional teams from prototype to 24×7 production, cutting cost and latency while raising model quality. Passionate mentor and bar raiser who translates business risk into measurable ML impact.
+
+% ---------- Core Competencies ----------
+\section*{Core Competencies}
+\begin{itemize}[leftmargin=*]
+  \item GenAI \& RAG • LLM fine‑tuning • Real‑time CV • Intelligent Doc Processing • MLOps (\textit{CI/CD, feature store, model registry}) • Cost optimisation • Edge AI • Data Engineering • Stakeholder leadership
+\end{itemize}
+
+% ---------- Experience ----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% Provectus
+\resumeSubheading{Provectus}{Jan 2016 – Present}{Senior ML Engineer / ML Solutions Architect}{Toronto, ON}
+
+\resumeItemListStart
+\resumeItem{\textbf{Enterprise GenAI Search} – Architected a Retrieval‑Augmented Generation platform (Bedrock + pgvector + Step Functions) serving \textbf{200 QPS} over \textbf{10 TB} of indexed docs with \textbf{$<$800 ms} p99 latency, cutting analyst research time by \textbf{70\%}.}
+\resumeItem{Scaled async processing pipeline (SageMaker + Textract) for \textbf{4 M docs/month}; removed AWS quota blockers via dynamic concurrency control, saving \$150k annual infra cost.}
+\resumeItem{Designed ML Platform (Terraform, Kubeflow, GitLab CI) that shrank model release cycle from \textbf{2 weeks → 2 hours}. On‑boarded 12 models, enforced reproducibility with automated evaluation gates.}
+\resumeItem{Mentored and performance‑coached \textbf{9 engineers}; drove hiring loops and guild sessions raising project velocity by 30\%.}
+\resumeItem{Presented results at AWS re:Invent ‘24 and internal exec demos; recognised with \textit{Provectus Excellence Award 2024}.}
+\resumeItemListEnd
+
+% Marmon CV project
+\resumeSubheading{}{ }{Computer Vision Lead – Manufacturing IoT}{ }
+\resumeItemListStart
+\resumeItem{Deployed YOLOv5 models optimised with ONNX/TensorRT on Jetson Xavier edge devices; achieved \textbf{\textless100 ms} latency and \textbf{97\% mAP}. Enabled real‑time downtime alerts that increased OEE by \textbf{11\%}.}
+\resumeItem{Integrated stream analytics (AWS Kinesis + IoT Greengrass) with self‑healing restart policies, maintaining \textbf{99.95\%} uptime across 70+ production lines.}
+\resumeItemListEnd
+
+% WorkerSafety CV
+\resumeSubheading{}{ }{Lead ML Engineer – Worker Safety AI}{ }
+\resumeItemListStart
+\resumeItem{Built multi‑protocol inference service (HTTP/RTSP/gRPC) processing 60 CCTV streams concurrently; detected PPE compliance at \textbf{98\% precision}, reducing safety incidents by \textbf{15\%}.}
+\resumeItem{Rolled out A/B drift monitoring with SageMaker Clarify triggering auto‑retraining, keeping model F1 within ±3 pp for 12 months.}
+\resumeItemListEnd
+
+% Pr3vent medical imaging
+\resumeSubheading{}{ }{Medical Imaging Research Engineer}{ }
+\resumeItemListStart
+\resumeItem{Delivered FDA‑compliant neonatal ROP screening system processing \textbf{400k+} retinal images with \textbf{96\% precision}, collaborating with Stanford researchers and clinicians.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% Earlier Experience
+\section*{Early Career}
+\resumeSubHeadingListStart
+\resumeSubheading{FOSS Labs}{Oct 2014 – Jan 2016}{Software Engineer}{Kazan, Russia}
+\resumeItemListStart
+\resumeItem{Refactored legacy SQL and caching layers reducing report generation time from 8 h to 20 min.}
+\resumeItem{Led full‑stack revamp of Rubin Kazan FC site – 40\% faster load, first foray into A/B testing.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ---------- Education ----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{M.Sc. Data Analysis – Kazan Federal University}{Sep 2016 – May 2018}{Thesis: Deep representation learning for biomedical imaging}{Kazan, Russia}
+\resumeSubHeadingListEnd
+
+% ---------- Certifications ----------
+\section{Certifications}
+\begin{itemize}[leftmargin=*]
+  \item AWS Certified Machine Learning – Specialty • AWS Solutions Architect – Professional • Google Cloud ML Professional
+\end{itemize}
+
+% ---------- Publications & Talks ----------
+\section{Publications \& Selected Talks}
+\begin{itemize}[leftmargin=*]
+  \item Comparison of LLMs in the Biomedical Domain (KDnuggets)
+  \item Accelerating FDA Form Processing with AI on AWS (AWS Partner Blog)
+  \item \href{https://www.youtube.com/watch?v=pe8GEUVM4t8}{Better Call YOLO – Computer Vision Cocktail Done Right} (YouTube)
+\end{itemize}
+
+% ---------- Technical Skills ----------
+\section{Technical Stack}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Languages}: Python, SQL, Bash, JavaScript
+  \item \textbf{ML}: Transformers, LLM fine‑tuning (LoRA, PEFT), CNNs, Object Detection, Multi‑Label, Anomaly, Time Series, Recommenders
+  \item \textbf{Cloud}: AWS (SageMaker, Bedrock, Lambda, Step Functions, Kinesis, S3, PGvector, DynamoDB, Aurora, EKS), GCP, Azure
+  \item \textbf{MLOps}: Docker, Kubernetes, Kubeflow, MLflow, Terraform, GitLab CI/CD, Feature Store, Model Registry, Monitoring (Prometheus, Grafana)
+  \item \textbf{Frameworks}: PyTorch, TensorFlow, FastAPI, Flask, React
+  \item \textbf{Optimisation}: TensorRT, ONNX, SageMaker Neo, A/B testing, Profiling
+\end{itemize}
+
+\end{document}
+
