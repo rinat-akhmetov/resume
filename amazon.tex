@@ -133,14 +133,15 @@ Expert in building reliable end-to-end solutions, handling large-scale data, and
 {Senior Machine Learning Engineer}{\textit{---}}
 \resumeItemListStart
 \resumeItem{Designed and deployed an enterprise-scale Retrieval-Augmented Generation (RAG) solution for \textbf{hybrid search} using \textbf{AWS Step Functions} and \textbf{Amazon Aurora with pg\_vector}. Processed over \textbf{4 million documents monthly}, supported \textbf{200+ queries per minute}, managed \textbf{10TB of data}, and achieved \textbf{99.9\% system reliability}.}
+\resumeItem{Built a CI-driven evaluation suite for RAG: retrieval \textbf{Recall@K}, \textbf{LLM-as-Judge} (GPT-4o) rubric scoring for accuracy, groundedness, and hallucination rate, calibrated by periodic human audits. Auto-generated dashboards flag regressions and cut validation cycle from 5 days to 2 days.}
 
 \resumeItemListEnd
 
 \resumeSubSubheading
 {Senior Machine Learning Engineer}{{Intelligent Document Processing}}
 \resumeItemListStart
-\resumeItem{Engineered an end-to-end NLP solution for FDA Form 483 processing using \textbf{Transformers}, \textbf{Scikit-learn}, \textbf{W\&B}, \textbf{AWS Lambda}, \textbf{Step Functions}, \textbf{SageMaker}, and \textbf{React}. Achieved an \textbf{85\% macro-averaged F1 score} across \textbf{124 categories} through distribution-balanced loss and a continuous retraining pipeline, processed \textbf{3,000+ documents}, and delivered a \textbf{5x improvement} in classification metrics.}
-\resumeItem{Applied \textbf{BERT-based transformer architectures} for document multi-class classification, achieving an \textbf{F1 score of 80\%} through training and hyperparameter tuning.}
+\resumeItem{Engineered an end-to-end NLP solution for FDA Form 483 processing using \textbf{Transformers}, \textbf{Scikit-learn}, \textbf{W\&B}, \textbf{AWS Lambda}, \textbf{Step Functions}, \textbf{SageMaker}, and \textbf{React}. Achieved an \textbf{85\% macro-averaged F-beta score} across \textbf{124 categories} through distribution-balanced loss and a continuous retraining pipeline, processed \textbf{3,000+ documents}, and delivered a \textbf{5x improvement} in classification metrics.}
+\resumeItem{Trained \textbf{RoBERTa-v3} multi-label classifier for financial documents, F1 improved from 0.87→0.92 using class-balanced focal loss.}
 \resumeItem{Designed an advanced information retrieval system leveraging \textbf{OpenAI GPT models}, \textbf{embedding search}, and \textbf{NLP techniques} for semantic extraction, improving precision and recall metrics significantly.}
 
 \resumeItemListEnd
@@ -148,13 +149,16 @@ Expert in building reliable end-to-end solutions, handling large-scale data, and
 {Senior Machine Learning Engineer}{\textit{\href{https://provectus.com/case-studies/computer-vision-solution-manufacturing/}{\underline{Marmon}}}}
 \resumeItemListStart
 \resumeItem{Architected and deployed an end-to-end machine monitoring system using \textbf{YOLOv5} computer vision models optimized with \textbf{ONNX/TensorRT}. Integrated with \textbf{AWS IoT Greengrass} and \textbf{MQTT} for real-time status detection and automated alerts, transforming zero-visibility operations into a self-healing system with continuous uptime monitoring.}
+\resumeItem{Optimized inference with TensorRT + INT8 quantization, delivering \textless100 ms end-to-end latency on Jetson Xavier NX.}
 
 \resumeItemListEnd
 \resumeSubSubheading
 {Machine Learning Engineer}{\href{https://provectus.com/worker-safety-construction/}{\underline{\textit{WorkerSafety}}}}
 \resumeItemListStart
 \resumeItem{Implemented an enterprise-scale ML-based safety monitoring system using \textbf{YOLO}, \textbf{TensorRT}, and \textbf{SageMaker Neo}. Featured multi-protocol inference (\textbf{HTTP/RTSP/GRPC}) and full \textbf{MLOps lifecycle}, achieving \textbf{99.9\% uptime} for concurrent video stream processing and reducing workplace safety incidents by \textbf{15\%} through automated real-time detection.}
-\resumeItem{Deployed an end-to-end vehicle monitoring system using \textbf{YOLOv4}, achieving \textbf{98\% detection accuracy} and \textbf{sub-100ms latency}. Leveraged \textbf{AWS Kinesis}, \textbf{GStreamer}, and edge computing to process \textbf{1080p streams} for automated violation detection and tracking.}
+\resumeItem{Designed and productionized a multi-camera \textbf{vehicle speed-measurement} platform for smart-city traffic analytics. Combined \textbf{YOLOv5} detection, \textbf{DeepSORT} tracking, homography-based road-plane projection to convert pixel trajectories into world-space coordinates.
+  Achieved median speed error < \textbf{ 2 km/h} on 1080p@30 FPS video across 4 lanes
+  auto-generated violation events, reducing manual enforcement workload by \textbf{35\%}.}
 
 \resumeItemListEnd
 \resumeSubSubheading
@@ -171,6 +175,7 @@ Expert in building reliable end-to-end solutions, handling large-scale data, and
 \resumeItem{Enhanced efficiency by optimizing resource-intensive SQL scripts, reducing report generation time from \textbf{8 hours to 20 minutes}.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
+
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -210,7 +215,7 @@ Expert in building reliable end-to-end solutions, handling large-scale data, and
         \textbf{DevOps/MLOps}{: Docker, Kubernetes, CI/CD, GitLab CI, MLflow, Kubeflow, Terraform, Jenkins} \\
         \textbf{Performance Optimization}{: Latency Optimization, Hyperparameter Tuning, Model Compilation with TensorRT, ONNX and SageMaker Neo} \\
         \textbf{Databases}{: Vector Databases (e.g., PGVector, ElasticSearch), PostgreSQL, DynamoDB, MongoDB, Cassandra} \\
-        \textbf{Frameworks}{: TensorFlow, PyTorch, Flask, FastAPI, Vue, React, Redux} \\
+        \textbf{Frameworks}{: PyTorch, TensorFlow, Flask, FastAPI, Vue, React, Redux} \\
         \textbf{Libraries}{: pandas, NumPy, SciPy, Matplotlib, seaborn, OpenCV, GStreamer, Scikit-learn} \\
         \textbf{Developer Tools}{: Git, GitLab, JIRA, MLflow, Jenkins} \\
         \textbf{Leadership \& Project Management}{: Agile, Scrum, Kanban, Risk Management, Stakeholder Collaboration, Team Mentoring}
